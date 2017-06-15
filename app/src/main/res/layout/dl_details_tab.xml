@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/topcontainer"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/reg_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <requestFocus />
+
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bgcolor"
+        android:layout_below="@+id/button_layout"
+        android:layout_marginTop="20dp"
+
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_zoom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_style_three"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/threelions"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:background="@drawable/layout_stylefordl"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TELANGANA UNION DRIVING LICENCE"
+                        android:textSize="12sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TELANGANA STATE"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="2dp"
+                android:background="#00ae03"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AP10820150001603"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/Tv_rcno"
+                        android:textColor="#c10101"/>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_marginLeft="40dp"
+                            android:src="@drawable/empty_profile"
+                            android:id="@+id/Img_dlimage"/>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="Matli Manohar"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:id="@+id/Tv_name"/>
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="M Lakshmaiah"
+                                android:textStyle="bold"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#000000"
+                                android:id="@+id/Tv_fname"
+                                />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/Tv_add"
+                                android:text="H.No:20-2-536/5a, Korlagunta, Maruthinagar, Tirupati, Andhra pradhesh, 517501."
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- </LinearLayout> -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/sign"
+                                android:visibility="invisible"/>
+                            <TextView
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:textColor="#c10101"
+                                android:text="Signature"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="50sp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10dp"
+                                    android:textStyle="bold"
+                                    android:text="Issued On:"/>
+                                <TextView
+                                    android:layout_width="100sp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="5dp"
+                                    android:id="@+id/Tv_issuedon"
+                                    android:text="20/02/2015"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="35dp"
+                                android:src="@drawable/sign"
+                                android:visibility="invisible"/>
+                            <TextView
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:text="Licence Authority"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:textColor="#c10101"
+                                android:layout_marginLeft="30dp"/>
+                            <TextView
+                                android:layout_width="150sp"
+                                android:layout_height="wrap_content"
+                                android:text="RTA-Tirupati-CZ"
+                                android:id="@+id/Tv_licenseauth"
+                                android:textSize="10dp"
+                                android:layout_marginLeft="30dp"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:layout_margin="10dp"
+                        android:background="#00ae03"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Non Transport"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="Light Motor Vehicle Non Transport, Motor Cycle With Gear"
+                            android:id="@+id/Tv_trans"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Validity Transport"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="18/02/2035"
+                            android:id="@+id/Tv_validitytans"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Validity Badge No."/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:id="@+id/Tv_badgeno"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Reference  No."/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="TS10820150001603"
+                            android:id="@+id/Tv_refno"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Original LA."/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="RTA-HYDERABAD-CZ"
+                            android:id="@+id/Tv_La"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Date of First Issue"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="19/02/2015"
+                            android:id="@+id/Tv_firstissue"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Birth"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="15/05/1994"
+                            android:id="@+id/Tv_dob"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Blood Group"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="ME4JF501DD8165144"
+                            android:id="@+id/Tv_bloodgroup"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:layout_margin="10dp"
+                        android:background="#00ae03"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Footer aligned to bottom -->
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="34dp"
+            android:contentDescription="@null"
+            android:gravity="bottom|center"
+            android:scaleType="fitXY"
+            android:background="#3F424B"
+            android:text="Powered By : MOTHER TECHNOLOGIES PROJECT VENTURES"
+            android:textColor="#ffff"
+            android:textStyle="bold|italic"
+
+            android:textSize="14dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

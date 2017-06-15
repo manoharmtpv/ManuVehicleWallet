@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/topcontainer"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/reg_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dip"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/Ed_dlno"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="ENTER LICENSE NO"
+                android:inputType="textCapCharacters"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <requestFocus />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:layout_below="@+id/reg_layout"
+       >
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Btn_dldetails"
+            android:text="GET DL DETAILS"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:background="@drawable/buttonback"
+
+
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="34dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:text="Powered By : MOTHER TECHNOLOGIES PROJECT VENTURES"
+            android:textColor="#ffff"
+            android:background="#3F424B"
+
+            android:textStyle="bold|italic"
+            android:textSize="14dp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="DL DETAILS"
+        style="@style/TextColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>

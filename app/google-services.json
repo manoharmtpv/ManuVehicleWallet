@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "635133628391",
+    "firebase_url": "https://myvehiclewallet.firebaseio.com",
+    "project_id": "myvehiclewallet",
+    "storage_bucket": "myvehiclewallet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635133628391:android:8923ceff59d4f0c4",
+        "android_client_info": {
+          "package_name": "com.mtpv.manohar.my_vehicle_wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635133628391-tkrkrbc9rjugnkc8msbmrkodbesh3j58.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mtpv.manohar.my_vehicle_wallet",
+            "certificate_hash": "bb366fe32d1e7985faeacd8cf5cb47a8ea683af3"
+          }
+        },
+        {
+          "client_id": "635133628391-850iqoq8hpt71pv5n04vlvjutvd3piio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBevFN8WEMse1lvZERlJ_21wYLuF997SLE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635133628391-850iqoq8hpt71pv5n04vlvjutvd3piio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

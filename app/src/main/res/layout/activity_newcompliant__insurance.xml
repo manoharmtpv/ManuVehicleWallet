@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <TextView
+        android:id="@+id/heading"
+        style="@style/TextColor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="COMPLAINT REGISTRATION"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:id="@+id/email_rel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_below="@+id/heading">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edit_cid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="REG NO"
+                android:text=""
+                />
+
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/email_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_below="@+id/email_rel">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel"
+            >
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edit_cdesc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="INSURANCE NO"
+                android:text=""
+
+                />
+
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/email_rel2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_below="@+id/email_rel1">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edit_ctype"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="INSURANCE COMPANY NAME"
+                android:text=""/>
+
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/email_rel4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_below="@+id/email_rel3">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edit_remarks"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="REMARKS"
+                android:text=""
+                android:background="@drawable/edittextshape"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/email_rel3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_below="@+id/email_rel2">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edit_issueddate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="INSURANCE ISSUED DATE"
+                android:text=""/>
+
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email_rel5"
+        android:layout_below="@+id/email_rel4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/empty_profile"
+            android:id="@+id/Img_doc1"
+            />
+
+        <TextView
+            android:id="@+id/Tv_doc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Img_doc1"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="CHOOSE / TAKE A DOC1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email_rel6"
+        android:layout_toRightOf="@+id/email_rel5"
+        android:layout_below="@+id/email_rel4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/empty_profile"
+            android:id="@+id/Img_doc2"
+
+            />
+
+        <TextView
+            android:id="@+id/Tv_doc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Img_doc2"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="CHOOSE / TAKE A DOC2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:weightSum="1"
+        android:layout_below="@+id/email_rel5">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_weight="0.5"
+            android:contentDescription="@null"
+            android:background="@drawable/buttonback"
+            android:textStyle="bold"
+            android:text="CANCEL"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffff"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_weight="0.5"
+            android:contentDescription="@null"
+            android:background="@drawable/buttonback"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:text="SUBMIT"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffff"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mtpv.manohar.my_vehicle_wallet">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/vehiclewallet"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/vehiclewallet"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Vehicle_Wallet_Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".Rc_info" />
+        <activity android:name=".DL_info" />
+        <activity android:name=".OTP" />
+        <activity android:name=".Aadhar_info" />
+        <activity android:name=".ComplaintsServices" />
+        <activity android:name=".Complaints_register" />
+        <activity android:name=".ImageViewActivity" />
+        <activity android:name=".NetBanking" />
+        <activity android:name=".Challan_Detail" />
+        <activity android:name=".PopupDetails" />
+        <activity android:name=".Newcompliant_Insurance" />
+        <activity
+            android:name=".ComplaintsSystemMenu"
+            android:label="@string/title_activity_complaints_system_menu"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Logout" />
+        <activity
+            android:name=".Pendindchallans_withTab"
+            android:label="@string/title_activity_pendindchallans_with_tab"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".RecyclerAdapters.WalletDisplay" />
+        <activity
+            android:name=".Vehcle_Module.E_Vehicle_track_Tab"
+            android:label="@string/title_activity_e__vehicle_track__tab"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Driving_License_Module.E_Driving_Track"
+            android:label="@string/title_activity_e__driving__track"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Aadhar_Module.E_Aadhar_Track"
+            android:label="@string/title_activity_aadhar__track"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Contact_Module.E_Contact_Track"
+            android:label="@string/title_activity_e__contact__track"
+            android:theme="@style/AppTheme"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="6a2e6247d1a27e2758ff99cd4d594d91d1b49b3f" />
+    </application>
+
+</manifest>

@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/topcontainer"
+    >
+
+
+        <RelativeLayout
+        android:id="@+id/reg_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+      >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/Ed_regno"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="ENTER REGISTRATION NO"
+                android:inputType="textCapCharacters"
+             />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <requestFocus />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Chasis_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/reg_layout">
+
+
+        <!--  Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/Ed_chasis"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="ENTER CHASIS NUMBER" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:layout_below="@+id/Chasis_layout"
+
+        >
+
+
+      <android.support.v7.widget.AppCompatButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/Btn_rcdetails"
+          android:text="GET RC DETAILS"
+
+
+          android:textStyle="bold"
+
+          android:gravity="center"
+
+          android:textColor="#ffff"
+          android:background="@drawable/buttonback"
+
+
+          android:layout_alignParentTop="true"
+          android:layout_marginTop="7dp"
+          android:layout_centerVertical="true"
+          android:layout_gravity="center"
+
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="34dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:text="Powered By : MOTHER TECHNOLOGIES PROJECT VENTURES"
+            android:textColor="#ffff"
+            android:background="#3F424B"
+
+            android:textStyle="bold|italic"
+            android:textSize="14dp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="RC DETAILS"
+        style="@style/TextColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/button_layout"
+
+        >
+
+        <!-- <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#fdfdfd">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/download"
+                android:layout_gravity="center"/>
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RTA m-Wallet"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#ff00f4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Govt. Of Telangana Transport Department"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#c10101"/>
+        </LinearLayout>
+        </LinearLayout> -->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="90dp"-->
+        <!--android:background="@drawable/layout_style_logo"-->
+        <!--android:orientation="horizontal">-->
+        <!--<ImageView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="75dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="6dp"-->
+        <!--android:src="@drawable/tslogo"/>-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="HYDERABAD TRAFFIC POLICE"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="25dp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="25dp"/>-->
+        <!--<ImageView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="75dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="23dp"-->
+        <!--android:src="@drawable/hcp_police"/>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/layout_zoom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_style_three"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/threelions"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:background="@drawable/layout_styleforrc"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TELANGANA STATE TRANSPORT DEPARTMENT"
+                        android:textSize="12sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CERTIFICATION OF REGISTRATION"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="2dp"
+                android:background="#c10101"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="120sp"
+                                android:layout_height="wrap_content"
+                                android:text="Regn. Number"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:text="AP03AU2719"
+                                android:textStyle="bold"
+                                android:textColor="#c10101"
+                                android:id="@+id/Tv_regnum"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="120sp"
+                                android:layout_height="wrap_content"
+                                android:text="Regn. Owner"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:text="Matli Manohar"
+                                android:id="@+id/Tv_ownername"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="120sp"
+                                android:layout_height="wrap_content"
+                                android:text="Father Name"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:text="M Lakshmaiah"
+                                android:id="@+id/Tv_fathername"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="120sp"
+                                android:layout_height="wrap_content"
+                                android:text="Address"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="20-2-536/5a, Korlagunta, Maruthi Nagar, Tirupati."
+                                android:id="@+id/Tv_address"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="120sp"
+                                android:layout_height="wrap_content"
+                                android:text="Maker's Class"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="ACTIVA ELECTRIC AS AND KS AND CBS BSIII"
+                                android:id="@+id/Tv_makersclass"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="120sp"
+                                android:layout_height="wrap_content"
+                                android:text="Vehicle Class"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="170sp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="MOTOR CYCLE"
+                                android:id="@+id/Tv_vehicleclass"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="120sp"
+                                android:layout_height="wrap_content"
+                                android:text="Mth. Yr. of Mfg"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="170sp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="08/2011"
+                                android:id="@+id/Tv_manufacturedate"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="120sp"
+                                android:layout_height="wrap_content"
+                                android:text="Fuel Used"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="170sp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="PETROL"
+                                android:id="@+id/Tv_fuel"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="3dp"
+                            android:layout_margin="10dp"
+                            android:background="#c10101"/>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="130sp"
+                                android:layout_height="wrap_content"
+                                android:text="Chassis Number"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="ME4JF501DD8165144"
+                                android:textStyle="bold"
+                                android:id="@+id/Tv_chasisnum"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="130sp"
+                                android:layout_height="wrap_content"
+                                android:text="Engine Number"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="170sp"
+                                android:layout_height="wrap_content"
+                                android:text="JF50E80163602"
+                                android:id="@+id/Tv_engineno"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="130sp"
+                                android:layout_height="wrap_content"
+                                android:text="Cubic Capacity"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="170sp"
+                                android:layout_height="wrap_content"
+                                android:text="109.00"
+                                android:id="@+id/Tv_cubiccapacity"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="130sp"
+                                android:layout_height="wrap_content"
+                                android:text="Wheel Base"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="1238"
+                                android:textStyle="bold"
+                                android:id="@+id/Tv_wheelbase"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="130sp"
+                                android:layout_height="wrap_content"
+                                android:text="Seating Capacity"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="170sp"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textStyle="bold"
+                                android:id="@+id/Tv_seatingcapacity"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="130sp"
+                                android:layout_height="wrap_content"
+                                android:text="Unladen Weight"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="112.00"
+                                android:textStyle="bold"
+                                android:id="@+id/Tv_weight"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="130sp"
+                                android:layout_height="wrap_content"
+                                android:text="Color"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="170sp"
+                                android:layout_height="wrap_content"
+                                android:text="C L RED"
+                                android:textStyle="bold"
+                                android:id="@+id/Tv_color"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="130sp"
+                                android:layout_height="wrap_content"
+                                android:text="Date of Registration"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="15/11/2011"
+                                android:textStyle="bold"
+                                android:id="@+id/Tv_dateofreg"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="130sp"
+                                android:layout_height="wrap_content"
+                                android:text="Regn. Valid Upto"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="17/05/2023"
+                                android:textStyle="bold"
+                                android:id="@+id/Tv_regvalidity"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="130sp"
+                                android:layout_height="wrap_content"
+                                android:text="Tax"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="4500.00"
+                                android:textStyle="bold"
+                                android:id="@+id/Tv_tax"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="130sp"
+                                android:layout_height="wrap_content"
+                                android:text="Hypothecated"/>
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"/>
+                            <TextView
+                                android:layout_width="200sp"
+                                android:layout_height="wrap_content"
+                                android:text="ASSHOK MOTORS"
+                                android:textStyle="bold"
+                                android:id="@+id/Tv_hypo"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="30dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="75dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@drawable/sign"
+                                    android:visibility="invisible"/>
+                                <TextView
+                                    android:layout_width="150sp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10dp"
+                                    android:textStyle="bold"
+                                    android:text="Signature of the Owner"
+                                    android:id="@+id/Tv_sign"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="75dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="60dp"
+                                    android:src="@drawable/sign"
+                                    android:visibility="invisible"/>
+                                <TextView
+                                    android:layout_width="150sp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Registering Authority RTA TIRUPATI"
+                                    android:textSize="10dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="50dp"
+                                    android:id="@+id/Tv_signofauthority"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="3dp"
+                            android:layout_margin="10dp"
+                            android:background="#c10101"/>
+
+                        <!-- <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="INSURANCE DETAILS"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_gravity="center"
+                            android:textColor="#c10101"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Vehicle Number"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:text="AP29BU3134"
+                            android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Owner Name"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:text="BATHINOJU KRANTHI KUMAR"
+                            android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Address"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:text="9-9-28, REDDY COLONY, CHAMPAPET RANGAREDDY."
+                            android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Chassis Number"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:text="ME4JF501DD8165144"
+                            android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Engine Number"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:text="JF50E80163602"
+                            android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Month Year of Manufacture"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:text="04/2013"
+                            android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Insurance Company Name"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:text="ICICI LOMBARD"
+                            android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Insurance Valid From"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:text="12/04/2013"
+                            android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="Insurance Valid Upto"/>
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"/>
+                        <TextView
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:text="11/04/2014"
+                            android:textStyle="bold"/>
+                        </LinearLayout> -->
+
+                    </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

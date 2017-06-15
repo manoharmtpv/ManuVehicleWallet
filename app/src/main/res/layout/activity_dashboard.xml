@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/ImageView3_Left"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView1"
+            android:background="@drawable/imageviewborder"
+            android:padding="2dp"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linearlayout2"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/Btn_RC"
+            android:layout_width="190dp"
+            android:layout_height="80dp"
+            android:layout_above="@+id/Btn_DL"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#3AB77F"
+            android:text="RC DETAILS"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Btn_aadhar"
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@+id/Btn_RC"
+            android:layout_toRightOf="@+id/Btn_RC"
+            android:background="#B06CBF"
+            android:text="AADHAR DETAILS"
+            android:textColor="#ffff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Btn_DL"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="#F88A00"
+            android:text="DL DETAILS"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_above="@+id/Btn_complaints"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/Btn_aadhar"
+            android:layout_toStartOf="@+id/Btn_aadhar" />
+
+        <Button
+            android:id="@+id/Btn_Pending"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#DC3D75"
+            android:text="PENDING CHALLANS"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_above="@+id/Btn_complaints"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/Btn_RC"
+            android:layout_toRightOf="@+id/Btn_RC" />
+
+        <Button
+            android:id="@+id/Btn_complaints"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_above="@+id/Btn_feedback"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#6162B4"
+            android:text="COMPLAINTS"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Btn_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_above="@+id/Tv_welcome"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#B9535D"
+            android:text="FEEDBACK"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/Tv_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/navigationBarColor"
+            android:gravity="center"
+            android:text="Powered By : MOTHER TECHNOLOGIES PROJECT VENTURES"
+            android:textColor="#ffff"
+            android:textSize="14dp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearlayout2"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Welcome Mr.M.Manohar"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
